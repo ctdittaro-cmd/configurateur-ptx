@@ -1,18 +1,2 @@
-CONFIGURATEUR PTx TRIMBLE - APPLICATION ANDROID (PWA)
-
-CONTENU
-- index.html, sw.js, manifest.webmanifest, icons/ : l'application complète (tout est dans ces fichiers).
-
-PUBLIER SUR GITHUB PAGES (gratuit)
-1. Créez un compte sur github.com, puis un nouveau dépôt public (par ex. "configurateur-ptx").
-2. Cliquez "Add file > Upload files", glissez TOUT le contenu de ce dossier (y compris le dossier icons et le fichier .nojekyll), puis "Commit changes".
-3. Dans le dépôt : Settings > Pages > Source "Deploy from a branch" > branche "main", dossier "/ (root)" > Save.
-4. Après 1 à 2 minutes, l'adresse est : https://VOTRE-COMPTE.github.io/configurateur-ptx/
-
-INSTALLER SUR ANDROID (revendeur)
-1. Ouvrir l'adresse dans Chrome.
-2. Appuyer sur "Installer l'application sur cet appareil" (sur l'accueil) ou menu Chrome > "Installer l'application".
-3. L'icône PTx apparaît sur l'écran d'accueil ; l'application s'ouvre en plein écran et fonctionne sans connexion.
-
-METTRE A JOUR
-Remplacez les fichiers dans le dépôt (Upload files, même nom). Les revendeurs reçoivent la nouvelle version à la prochaine ouverture avec du réseau.
+Déposez ces 7 fichiers à la racine du dépôt GitHub, tous ensemble, sans dossier :
+index.html, sw.js, manifest.webmanifest, icon-192.png, icon-512.png, maskable-512.png, apple-touch-icon.png
