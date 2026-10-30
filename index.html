@@ -819,7 +819,7 @@ $('homebtn').onclick=()=>{$('guide').hidden=true;$('welcome').classList.remove('
 (function(){const w=$('welcome');
   ['dealer','vendor'].forEach(k=>{const el=$(k);try{el.value=localStorage.getItem('ptx-'+k)||''}catch(e){}el.addEventListener('input',()=>{try{localStorage.setItem('ptx-'+k,el.value.trim())}catch(e){}})});
   window.ptxSetUser=n=>{n=(n||'').trim();const e=$('wname');e.innerHTML=n?'Bonjour <em></em>':'sur votre espace revendeur';if(n)e.querySelector('em').textContent=n};
-  const DEVUSER=/github\.io$/.test(location.hostname)?'':'Clément DITTARO';/* nom de développement : jamais affiché sur le site des revendeurs */
+  const DEVUSER='Clément DITTARO';/* nom de développement : à retirer avant diffusion aux revendeurs */
   const uv=()=>window.ptxSetUser($('vendor').value||DEVUSER);uv();$('vendor').addEventListener('input',uv);
   document.querySelectorAll('.weco button[data-mode]').forEach(b=>b.addEventListener('click',()=>{const m=b.dataset.mode;w.classList.add('off');
     if(m==='guide')openGuide();else if(m==='tool')openSpr();else window.scrollTo(0,0)}));
